@@ -1,0 +1,33 @@
+@mixin line-height-calc($fs, $lh, $fw) {
+  $lh-n: $lh * 1000;
+  $lh-b: $lh-n / $fs;
+  $lh-round: ceil($lh-b);
+   $lh-my: $lh-round/1000;
+  font-size: $fs * 1px;
+  line-height: $lh-my;
+  font-weight: $fw;
+}
+
+.logo-link {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-family: var(--logo-font);
+    @include line-height-calc(26, 31, 700);
+    letter-spacing: 0.03em;
+    font-style: normal;
+  }
+  .logo-web {
+    color: var(--link-color);
+    font-family: var(--logo-font);
+    font-style: normal;
+  }
+  .logo-link-dark-theme {
+    color: var(--text-color-accent);
+  }
+  
+  .logo-link-light-theme {
+    color: #000000;
+  }
+  

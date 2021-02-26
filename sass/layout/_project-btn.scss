@@ -1,0 +1,66 @@
+%align {
+  display: flex;
+  align-items: center;
+}
+@mixin line-height-calc($fs, $lh, $fw) {
+  $lh-n: $lh * 1000;
+  $lh-b: $lh-n / $fs;
+  $lh-round: ceil($lh-b);
+   $lh-my: $lh-round/1000;
+  font-size: $fs * 1px;
+  line-height: $lh-my;
+  font-weight: $fw;
+}
+
+.site-buttons {
+     display: block;
+     }
+     
+   .buttons-list {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 34.57px;
+   
+   }
+   .buttons-nav {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 34.57px;
+   
+   }
+   .buttons-list-item {
+     display: flex;
+   }
+   .buttons-list-item:not(:last-child) {
+     margin-right: 8px;
+   }
+   .buttons-list-item-btn {
+     display: block;
+     padding: 6.1px 22.5px;
+     border-color: transparent;
+     border-radius: 4px;
+        }
+   .buttons-list-item {
+     
+     border-radius: 4px;
+     background:var(--our-tem-color);
+   }
+   
+   .buttons-list-item-btn {
+     text-align: center;
+     font-family: var(--text-font);
+     @include line-height-calc(16, 26, 500);
+     letter-spacing: 0.03em;
+     color: var(--title-color);
+     cursor: pointer;
+     transition: color var(--duration) var(--cubic),background-color var(--duration)  var(--cubic), box-shadow var(--duration) var(--cubic);
+   
+     &:hover,
+     &:focus {
+       color:var(--background-color);
+       background-color: var(--link-color);
+       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     }
+   }
+   
+  

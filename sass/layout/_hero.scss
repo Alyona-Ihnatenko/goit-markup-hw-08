@@ -1,0 +1,138 @@
+%align {
+  display: flex;
+  align-items: center;
+}
+@mixin line-height-calc($fs, $lh, $fw) {
+  $lh-n: $lh * 1000;
+  $lh-b: $lh-n / $fs;
+  $lh-round: ceil($lh-b);
+   $lh-my: $lh-round/1000;
+  font-size: $fs * 1px;
+  line-height: $lh-my;
+  font-weight: $fw;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    background-color: var(--header-footer-color);
+    padding-bottom: 200px;
+    padding-top: 200px;
+
+  }
+
+  .hero-title {
+    width: 696px;
+    margin-bottom: 30px;
+    font-family: var(--text-font);
+   @include line-height-calc(44, 60, 900);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-accent);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .overlay {
+    display: flex;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hw4/effect1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #c4c4c4;
+  }
+  
+  .hero-above-side {
+    text-align: center;
+    width: 1600px;
+  }
+  
+  .hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  
+  .hero-list-item {
+    margin-right: 30px;
+    
+  }
+  
+  .hero-list-item-title {
+    margin-top: 30px;
+    font-family: var(--text-font);
+    @include line-height-calc(14, 16, 700);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  .hero-list-item-text {
+    width: 270px;
+    font-family: var(--text-font);
+    @include line-height-calc(14, 24, 400);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-top: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .hero-description {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    
+    & .container {
+      display: flex;
+      height: 251px;
+    }
+  }
+  
+
+  .hero-list {
+    display: flex;
+  }
+  .hero-list-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    width: 270px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    color: var(--icon-color);
+  }
+  .icon-antenna::before {
+    background-image: url(../images/hw4/antenna.png);
+    
+  }
+  
+  .icon-clock::before {
+    background-image:url(../images/hw4/clock.png);
+  }
+  .icon-diagram::before {
+    background-image: url(../images/hw4/diagram.png);
+  }
+  .icon-astronaut::before {
+    background-image: url(../images/hw4/astronaut.png);
+  }
+
+  

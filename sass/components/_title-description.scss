@@ -1,0 +1,19 @@
+@mixin line-height-calc($fs, $lh, $fw) {
+  $lh-n: $lh * 1000;
+  $lh-b: $lh-n / $fs;
+  $lh-round: ceil($lh-b);
+   $lh-my: $lh-round/1000;
+  font-size: $fs * 1px;
+  line-height: $lh-my;
+  font-weight: $fw;
+}
+
+.about-us-title,
+.our-team-title,
+.our-clients-title {
+  font-family: Roboto;
+ @include line-height-calc(36, 42, 700);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
