@@ -1,8 +1,37 @@
-.container {
+/*.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
+  }*/
+  .container{
+  width: 100%;
+  padding:0 15px;
+  margin:0 auto;
+    .header &{
+     @extend %align;
+     justify-content: space-between;
+    }
   }
+ @media screen and (min-width: 480px){
+ .container{ 
+    width: 480px;
+    margin: 0 auto;
+   }
+}
+@media screen and (min-width:768px){
+  .container{
+    width: 768px;
+    .header &{
+      @extend %align;
+    }
+
+  }
+}
+@media screen and (min-widh:1200px){
+  .container{
+    width: 1200px;
+  }
+}

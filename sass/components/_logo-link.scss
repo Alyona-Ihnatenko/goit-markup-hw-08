@@ -1,4 +1,4 @@
-@mixin line-height-calc($fs, $lh, $fw) {
+/*@mixin line-height-calc($fs, $lh, $fw) {
   $lh-n: $lh * 1000;
   $lh-b: $lh-n / $fs;
   $lh-round: ceil($lh-b);
@@ -29,5 +29,5 @@
   
   .logo-link-light-theme {
     color: #000000;
-  }
+  }*/
   
