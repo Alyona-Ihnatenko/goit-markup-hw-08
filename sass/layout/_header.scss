@@ -13,10 +13,7 @@
     line-height: $lh-my;
     font-weight: $fw;
   }
-  .header{
-    padding-top:16px;
-    padding-bottom: 16px;
-  }
+ 
   
   .logo-link {
     padding:15px 16px;
@@ -45,6 +42,10 @@
     .auth-nav{
       display: none;
     }
+    .header{
+      padding-top:16px;
+      padding-bottom: 16px;
+    }
     .burger-btn,
     .close-mobile-btn{
       background-color:transparent;
@@ -55,11 +56,11 @@
     }
     .close-mobile-btn{
       position: absolute;
-      box-sizing: border-box;
-      top: 10px;
-      right: 10px;
+      top: 15px;
+      right: 15px;
       width: 40px;
       height: 40px;
+      padding: 0;
       text-align: center;
       justify-content: center;
       cursor: pointer;
@@ -68,6 +69,8 @@
     
     }
     .close-mobile-icon{
+      width: 18px;
+      height: 18px;
       display: flex;
       fill: currentColor;
       
@@ -90,7 +93,7 @@
       position:absolute;
       top: 0;
       left:50%;
-      transform: translateX(-50%) translateY(-100%);
+      transform: translateX(-50%) translateY(-150%);
       width: 100%;
       max-width: 480px;
       height: 796px;
@@ -101,16 +104,79 @@
     .mobile-menu.is-open{
       transform: translateX(-50%) translateY(0%);
     }
-    .mobile-link{
+    .mobile-link-studio{
      font-family:var(-text-font);
-    font-style: normal;
-    @include line-height-calc(40, 47, 500);
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    color: var(--link-color) ;
+     font-style: normal;
+     @include line-height-calc(40, 47, 500);
+     text-align: center;
+     letter-spacing: 0.02em;
+     color: var(--title-color) ;
+      &:focus,
+      &:hover{
+       color:var(--link-color);
+      
+     }
+   
     }
-  }
+    .mobile-link-studio:not(last-child){
+    
+     margin-bottom: 32px;
+    }
+    .mobile-link-studio{
+    display: flex;
+    }
+    .mobile-list-studio{
+      padding-bottom:306px ;
+     
+    }
+    .mobile-link-tel{
+      display: flex;
+      font-family:var(--text-font);
+     font-style: normal;
+     @include line-height-calc(34, 40, 500);
+     letter-spacing: 0.02em;
+      color:var(--link-color);
+      margin-bottom: 32px;
+    }
+    .mobile-link-mail{
+      font-family:var(--text-font);
+      font-style: normal;
+     @include line-height-calc(24, 28, 500);
+     letter-spacing: 0.02em;
+      color:var(--accent-color);
+
+    }
+    .mobile-list-auth{
+      padding-bottom: 64px;
+    }
+    .mobile-list{
+      display: flex;
+      padding-left: -10px;
+    }
+    .mobile-item{
+      display: inline-flex;
+      
+     
+    }
+    .mobile-link{
+      display:inline-flex;
+      font-family: var(--text-font);
+      font-style: normal;
+      @include line-height-calc(18, 22, 500);
+      letter-spacing: 0.02em;
+      color:var(--link-color);
+      padding-right: 10px;
+      padding-left: 10px;
+     
+    
+    }
+    
+    .mobile-link:not(last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      
+         }
+ }
+  
   @media screen and (min-width:768px){
     .burger-btn{
       display: none;
@@ -120,5 +186,8 @@
     }
     .navigation-list {
       display: flex;
+    }
+    .header{
+      height: 80px;
     }
   }

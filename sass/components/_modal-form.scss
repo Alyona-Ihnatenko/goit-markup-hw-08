@@ -11,10 +11,11 @@
   line-height: $lh-my;
   font-weight: $fw;
 }
+@media screen and( min-width:480px){
 .backdrop{
     position: fixed;
     width:100%;
-    height:1024px;
+    height:796px;
     top: 0;
     left:0;
     background: rgba(0, 0, 0, 0.2);
@@ -26,6 +27,7 @@
     visibility: hidden;
     } 
  }
+
   .backdrop.is-hidden .modal{
     transform:translate(-50%, -50%) scale(0);
     opacity: 0;
@@ -34,8 +36,8 @@
   .backdrop .modal{
     display: flex;
     position: fixed;
-   width: 528px;
-   height: 581px;
+   width: 450px;
+   height: 609px;
    left: 50%;
    top:50%;
    transform: translate(-50%,-50%) scale(1);
@@ -43,8 +45,9 @@
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
    transition: transform 2500ms linear;
+   padding: 40px;
   }
-  
+}
   .close-btn{
     position: absolute;
     @extend %align;
@@ -78,16 +81,36 @@
     .close-btn:focus &{
     color:var(--link-color);
     }
-    
-  }
- 
- 
-  
-  .modal{
-    padding: 40px;
+    .modal-form-text{
+      display: flex;
+      font-family: var(--text-font);
+     font-style: normal;
+     @include line-height-calc(20, 30, 700);
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: #212121;
+      margin-bottom: 12px;
+      width: 370px;
+      height: 60px;
+    }
+    .modal-form-input{
+      display: block;
+      height: 40px;
+      width:370px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+     box-sizing: border-box;
+     border-radius: 4px;
+     /*padding-left: 42px;*/
+     transition: border-color var(--duration) var(--cubic);
+      &:focus{
+      border-color:var(--link-color);
+      outline: none;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     }
   }
   .modal-form{
-    @extend %align;
+   display: flex;
+   align-items: center;
     flex-direction: column;
    
   }
@@ -105,7 +128,7 @@
     position: relative;
     margin-top: 4px;
   }
-  .modal-form-input{
+/*  .modal-form-input{
     display: block;
     height: 40px;
     width: 448px;
@@ -210,3 +233,4 @@
     border-radius: 4px;
     border-color: var(--link-color);
   }
+  */

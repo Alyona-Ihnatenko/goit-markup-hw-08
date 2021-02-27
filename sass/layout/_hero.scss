@@ -11,7 +11,7 @@
   line-height: $lh-my;
   font-weight: $fw;
 }
-.hero {
+/*.hero {
     display: flex;
     justify-content: center;
     width: 1600px;
@@ -135,4 +135,35 @@
     background-image: url(../images/hw4/astronaut.png);
   }
 
-  
+  */
+  @media screen and (min-width :480px){
+    .hero{
+    width: 480px;
+    height: 400px;
+    background: rgba(47, 48, 58, 0.4);
+    padding: 118px 60px;
+  }
+  .hero-title {
+    width: 360px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family:var(--text-font);
+    font-style: normal;
+    @include line-height-calc(26, 42, 900);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+     color:var(--background-color);
+    }
+    .overlay{
+      display: flex;
+      height: 400px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      background-image: linear-gradient( to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/hw-08/header/Header-img.jpg) }
+  }
