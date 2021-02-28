@@ -11,7 +11,8 @@
   line-height: $lh-my;
   font-weight: $fw;
 }
-/*.hero {
+@media screen and(min-width:1200px){
+.hero {
     display: flex;
     justify-content: center;
     width: 1600px;
@@ -20,9 +21,10 @@
     padding-top: 200px;
 
   }
+}
+
 
   .hero-title {
-    width: 696px;
     margin-bottom: 30px;
     font-family: var(--text-font);
    @include line-height-calc(44, 60, 900);
@@ -51,12 +53,12 @@
     background-color: #c4c4c4;
   }
   
-  .hero-above-side {
+ /* .hero-above-side {
     text-align: center;
     width: 1600px;
-  }
+  }*/
   
-  .hero-list {
+ /* .hero-list {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -66,7 +68,7 @@
   .hero-list-item {
     margin-right: 30px;
     
-  }
+  }*/
   
   .hero-list-item-title {
     margin-top: 30px;
@@ -75,6 +77,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
+    text-align: center;
 
     &:not(:last-child) {
       margin-right: 30px;
@@ -82,7 +85,6 @@
   }
   
   .hero-list-item-text {
-    width: 270px;
     font-family: var(--text-font);
     @include line-height-calc(14, 24, 400);
     letter-spacing: 0.03em;
@@ -94,25 +96,20 @@
     }
   }
   
-  .hero-description {
+ /*.hero-description {
     padding-bottom: 94px;
-    padding-top: 94px;
+    padding-top: 94px;}*/
+  
     
-    & .container {
-      display: flex;
-      height: 251px;
-    }
-  }
+   
   
 
-  .hero-list {
+ /* .hero-list {
     display: flex;
-  }
+  }*/
   .hero-list-item::before {
     content: "";
     display: block;
-    height: 120px;
-    width: 270px;
     background: #f5f4fa;
     border-radius: 4px;
     background-repeat: no-repeat;
@@ -135,24 +132,24 @@
     background-image: url(../images/hw4/astronaut.png);
   }
 
-  */
+  
   @media screen and (min-width :480px){
     .hero{
-    width: 480px;
+   max-width: 480px;
     height: 400px;
     background: rgba(47, 48, 58, 0.4);
     padding: 118px 60px;
+    margin-bottom: 60px;
   }
-  .hero-title {
-    width: 360px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family:var(--text-font);
-    font-style: normal;
-    @include line-height-calc(26, 42, 900);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    .hero-title {
+     width: 360px;
+     text-align: center;
+     margin-bottom: 30px;
+     font-family:var(--text-font);
+     font-style: normal;
+     @include line-height-calc(26, 42, 900);
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
      color:var(--background-color);
     }
     .overlay{
@@ -165,5 +162,44 @@
       background-image: linear-gradient( to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-      url(../images/hw-08/header/Header-img.jpg) }
+      url(../images/hw-08/header/Header-img.jpg) 
+    }
+     @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx),
+      screen and(min-width:480px) {
+        .overlay{
+          background-image:linear-gradient( to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+           url(../images/hw-08/header/Header-img.jpg );
+          }
+        
+      }
+
+    .hero-above-side {
+      text-align: center;
+      width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-list-item::before{
+      height: 120px;
+      width: 450px;
+    }
+    .hero-list-item-text{
+      width: 450px;
+    }
+    .hero-description{
+      width: 450px;
+      height: 994px;
+      padding-bottom: 60px;
+
+     /* & .container {
+        display: flex;
+        height: 251px;
+      }*/
+    }
   }

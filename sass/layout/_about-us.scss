@@ -67,3 +67,8 @@
     text-transform: uppercase;
     color: var(--background-color);
   }
+  @media screen and(min-width:480px)and (max-width:1199px){
+    .about-us{
+      display: none;
+    }
+  }

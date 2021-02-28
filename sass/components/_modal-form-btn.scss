@@ -22,7 +22,9 @@
    font-family: var(--text-font);
    font-style: normal;
    @include line-height-calc(16, 30, 700);
-   @extend %inline-block;
+   display: flex;
+   text-align: center;
+   align-items: center;
    letter-spacing: 0.06em;
    color:var(--background-color);
    background-color:#188CE8;
@@ -40,11 +42,9 @@
   }
  @media screen and(min-width:480px){
    .modal-form-btn{
-     display: inline-flex;
+    text-align: center;
      align-items: center;
-     text-align:center ;
-     align-self: center;
-     margin-left: auto;
-     margin-right: auto;
+     display: inline-block;
+    
    }
  }
