@@ -66,16 +66,16 @@
   //   margin-left: auto;
   
 
-    .our-client-list{
+   /* .our-client-list{
       margin:-15px ;
-    }
+    }*/
 
     .our-clients-item {
        display: flex;
        text-decoration: none;
        height: 90px;
-       width:calc((100%-4*60px)/2);
-       margin: 15px;
+       width:calc((100%-60px)/2);
+       margin: 0 15px 30px 15px;
      
 
     }
