@@ -8,7 +8,6 @@
   //   }
   // }
    .our-clients-descr {
-    display: flex;
     text-align: center;
    }
   
@@ -67,23 +66,28 @@
   //   margin-left: auto;
   
 
-
+    .our-client-list{
+      margin:-15px ;
+    }
 
     .our-clients-item {
        display: flex;
        text-decoration: none;
        height: 90px;
-       width:calc((100%-4*15px)/2);
+       width:calc((100%-4*30px)/2);
        margin: 15px;
      
 
     }
     .our-clients-link {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+          display: flex;
           border-radius: 4px;
           border-color:var(--icon-color);
          color:var(--icon-color);
          background-color: var(--background-color);
-         display: flex;
          width: 100%;
          height: 100%;
          border: solid 1px var(--icon-color);
@@ -97,12 +101,7 @@
         
       
        .our-clients-icon {
-         display: flex;
          fill:currentColor;
-         align-items: center;
-         justify-content: center;
-         text-align: center;
-         margin: auto;
          transition: color var(--duration) var(--cubic);
     
           &:hover,
@@ -112,10 +111,7 @@
         }
         .our-clients-list{
           display: flex;
-          width: 480px;
+        
           margin: -15px;
         }
-        .our-clients{
-          width: 480px;
-        }
-      
+       
