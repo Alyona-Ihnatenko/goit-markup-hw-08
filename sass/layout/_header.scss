@@ -151,10 +151,10 @@
     }
     .mobile-list{
       display: flex;
-      padding-left: -10px;
     }
     .mobile-item{
       display: inline-flex;
+      padding-left: -10px;
       
      
     }
@@ -171,7 +171,7 @@
     
     }
     
-    .mobile-link:not(last-child) {
+    .mobile-link:not(:last-child) {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
       
          }
