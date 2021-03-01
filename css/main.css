@@ -927,10 +927,6 @@ img {
   text-align: center;
 }
 
-.hero-list-item-title:not(:last-child) {
-  margin-right: 30px;
-}
-
 .hero-list-item-text {
   font-family: var(--text-font);
   font-size: 14px;
@@ -950,6 +946,7 @@ img {
     padding-top: 94px;}*/
 .hero-list {
   display: flex;
+  flex-direction: column;
 }
 
 .hero-list-item::before {
@@ -980,10 +977,8 @@ img {
 }
 
 .hero {
-  width: 480px;
   height: 400px;
   background: rgba(47, 48, 58, 0.4);
-  padding: 118px 60px;
   margin-bottom: 60px;
 }
 
@@ -1005,8 +1000,6 @@ img {
   display: flex;
   height: 400px;
   max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hw-08/header/Header-img.jpg);
 }
@@ -1019,9 +1012,6 @@ img {
 
 .hero-above-side {
   text-align: center;
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-list-item::before {
@@ -1167,20 +1157,10 @@ img {
 
 .icon-list {
   display: flex;
-  width: 450px;
-  height: 44px;
   margin-right: -10px;
   margin-bottom: -30px;
   align-items: center;
   justify-content: center;
-}
-
-.icon-list:nth-child(4n) {
-  margin-right: 0;
-}
-
-.icon-list:nth-last-child(-n + 4) {
-  margin-bottom: 0px;
 }
 
 .icon-list-item {
@@ -1188,6 +1168,7 @@ img {
   display: flex;
   text-decoration: none;
   margin-right: 10px;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
 }
@@ -1218,7 +1199,6 @@ img {
 }
 
 .our-team-list-item-text {
-  min-width: 130px;
   text-align: center;
   font-family: var(--text-font);
   font-size: 16px;

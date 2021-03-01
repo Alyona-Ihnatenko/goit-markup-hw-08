@@ -78,9 +78,6 @@
     color: var(--title-color);
     text-align: center;
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
   
   .hero-list-item-text {
@@ -105,6 +102,7 @@
 
   .hero-list {
     display: flex;
+    flex-direction: column;
   }
   .hero-list-item::before {
     content: "";
@@ -134,10 +132,8 @@
   
   
     .hero{
-    width: 480px;
     height: 400px;
     background: rgba(47, 48, 58, 0.4);
-    padding: 118px 60px;
     margin-bottom: 60px;
     }
     .hero-title {
@@ -155,8 +151,6 @@
       display: flex;
       height: 400px;
       max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
       background-repeat: no-repeat;
       background-image: linear-gradient( to right,
       rgba(47, 48, 58, 0.4),
@@ -180,9 +174,7 @@
 
     .hero-above-side {
       text-align: center;
-      width: 360px;
-      margin-left: auto;
-      margin-right: auto;
+  
     }
     .hero-list-item::before{
       height: 120px;

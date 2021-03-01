@@ -137,25 +137,18 @@
       }
   .icon-list {
      display: flex;
-     width: 450px;
-     height: 44px;
      margin-right: -10px;
      margin-bottom: -30px;
      align-items: center;
      justify-content: center;
       
-       &:nth-child(4n) {
-        margin-right: 0;
-       }
-       &:nth-last-child(-n + 4) {
-         margin-bottom: 0px;
-        }
    }
      .icon-list-item {
        display: inline-block;
        display: flex;
        text-decoration: none;
        margin-right: 10px;
+      margin-bottom: 30px;
        align-items: center;
        justify-content: center;
       }
@@ -185,7 +178,6 @@
        width: 20px;
         }
         .our-team-list-item-text {
-            min-width: 130px;
             text-align: center;
             font-family: var(--text-font);
             @include line-height-calc(16, 19, 500);
