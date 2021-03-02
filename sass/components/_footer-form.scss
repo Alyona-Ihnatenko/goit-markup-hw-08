@@ -111,6 +111,7 @@
        }
        .footer-input::placeholder{
         padding: 16px 15px;
+        align-self: center;
         font-family: var(--text-font);
         @include line-height-calc(14, 16, 700);
         display: flex;
