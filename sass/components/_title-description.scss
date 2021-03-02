@@ -34,5 +34,6 @@ margin-bottom: 10px;
 .our-clients-title{
 @include line-height-calc(28, 33, 500);
 text-align: center;
-letter-spacing: 0.03em
+letter-spacing: 0.03em;
+margin-bottom: 30px;
 }

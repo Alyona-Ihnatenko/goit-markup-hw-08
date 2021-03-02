@@ -7,10 +7,10 @@
   line-height: $lh-my;
   font-weight: $fw;
 }
-@media screen and(min-width:480px){
+
 .hero-btn {
-  display: flex;
-  align-items: center;
+   align-items: center;
+   text-align: center;
     padding: 10px 32px;
     width: 200px;
     font-family: var(--text-font);
@@ -24,8 +24,6 @@
     transition-timing-function: var(--cubic);
     cursor: pointer;
     border: none;
-    margin-right: auto;
-    margin-left: auto;
     
     &:hover,
     &:focus {
@@ -34,6 +32,5 @@
     }
  
   }
-}
-  
+
   
