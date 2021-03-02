@@ -7,9 +7,9 @@
   //     display: flex;
   //   }
   // }
-   .our-clients-descr {
+  /* .our-clients-descr {
     text-align: center;
-   }
+   }*/
   
   // .our-client-list {
   //   display: flex;
@@ -69,7 +69,14 @@
   /*  .our-client-list{
       margin:-15px ;
     }*/
-
+    .our-client-list{
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15PX;
+      margin-left: -15px;
+      margin-bottom: -30px;
+    }
+   
     .our-clients-item {
        display: flex;
        text-decoration: none;
@@ -84,6 +91,7 @@
         justify-content: center;
         text-align: center;
           display: flex;
+          flex-direction: row;
           border-radius: 4px;
           border-color:var(--icon-color);
          color:var(--icon-color);
@@ -109,9 +117,4 @@
          color: var(--link-color);
          }
         }
-        .our-clients-list{
-          display: flex;
-        
-          margin: -15px;
-        }
-       
+      
