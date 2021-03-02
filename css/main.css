@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 
-.modal-label-policy, .product-label, .footer-input::placeholder, .footer-form-input {
+.modal-label-policy, .product-label {
   display: flex;
   align-items: center;
 }
@@ -146,7 +146,7 @@ img {
   color: var(--text-color-accent);
 }
 
-.modal-label-policy, .product-label, .footer-input::placeholder, .footer-form-input {
+.modal-label-policy, .product-label {
   display: flex;
   align-items: center;
 }
@@ -795,7 +795,7 @@ img {
   }
 }
 
-.modal-label-policy, .product-label, .footer-input::placeholder, .footer-form-input {
+.modal-label-policy, .product-label {
   display: flex;
   align-items: center;
 }
@@ -804,15 +804,6 @@ img {
   background-color: var(--header-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.address-list-item:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .address-list-item-link {
@@ -842,6 +833,20 @@ img {
   color: var(--link-color);
 }
 
+.footer-address {
+  text-align: center;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+
+.footer-icons {
+  margin-top: 60px;
+  align-items: center;
+  display: block;
+}
+
 .footer-title {
   color: var(--background-color);
   margin-bottom: 20px;
@@ -852,12 +857,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.footer-icons {
-  margin-left: 70px;
-  width: 206px;
-  display: block;
+  text-align: center;
 }
 
 .icon-link .dark-them {
@@ -878,7 +878,7 @@ img {
   fill: var(--background-color);
 }
 
-.modal-label-policy, .product-label, .footer-input::placeholder, .footer-form-input {
+.modal-label-policy, .product-label {
   display: flex;
   align-items: center;
 }
@@ -1092,7 +1092,7 @@ img {
   margin-bottom: 30px;
 }
 
-.modal-label-policy, .product-label, .footer-input::placeholder, .footer-form-input {
+.modal-label-policy, .product-label {
   display: flex;
   align-items: center;
 }
@@ -1287,36 +1287,13 @@ img {
   color: var(--link-color);
 }
 
-.modal-label-policy, .product-label, .footer-input::placeholder, .footer-form-input {
+.our-clients {
+  padding-bottom: 60px;
+}
+
+.modal-label-policy, .product-label {
   display: flex;
   align-items: center;
-}
-
-.footer-form {
-  display: inline-block;
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
-}
-
-.footer-input {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: var(--header-footer-color);
-}
-
-.footer-input::placeholder {
-  padding: 16px 15px;
-  font-family: var(--text-font);
-  font-size: 14px;
-  line-height: 1.143;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-btn {
@@ -1324,6 +1301,8 @@ img {
   position: relative;
   width: 200px;
   height: 50px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: var(--text-font);
   font-style: normal;
   font-size: 16px;
@@ -1336,21 +1315,8 @@ img {
   background: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 12px;
   border: none;
   cursor: pointer;
-}
-
-.footer-text {
-  font-family: var(--text-font);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.143;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--background-color);
-  margin-bottom: 20px;
 }
 
 .icon-send {
@@ -1370,4 +1336,48 @@ img {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }*/
+.footer-form {
+  width: 450px;
+}
+
+.footer-input {
+  width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--header-footer-color);
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-input::placeholder {
+  padding: 16px 15px;
+  font-family: var(--text-font);
+  font-size: 14px;
+  line-height: 1.143;
+  font-weight: 700;
+  display: flex;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 /*# sourceMappingURL=main.css.map */
