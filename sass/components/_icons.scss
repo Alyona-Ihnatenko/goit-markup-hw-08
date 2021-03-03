@@ -11,13 +11,21 @@
   line-height: $lh-my;
   font-weight: $fw;
 }
-.icon-list {
+/*.icon-list {
     display: flex;
     width: 206px;
     height: 44px;
     margin-right: -10px;
     /*margin-bottom: -30px;*/
-  }
+
+  /* .icon-list {
+      display: flex;
+      justify-content: center;
+      height: 44px;
+      margin-right: -10px;
+      margin-bottom: 30px;
+   }
+      /*margin-bottom: -30px;
   .icon-list-item {
     display: inline-block;
     display: flex;
