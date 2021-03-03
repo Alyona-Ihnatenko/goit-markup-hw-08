@@ -101,6 +101,7 @@
       padding: 48px 40px;
       background-color: white;
       transition: transform 300ms linear;
+      z-index: 999;
     }
     .mobile-menu.is-open{
       transform: translateX(-50%) translateY(0%);
