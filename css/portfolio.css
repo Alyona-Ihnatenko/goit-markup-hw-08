@@ -761,7 +761,7 @@ img {
 
 .footer-input::placeholder {
   padding: 16px 15px;
-  align-self: center;
+  align-items: center;
   font-family: var(--text-font);
   font-size: 14px;
   line-height: 1.143;
