@@ -283,9 +283,16 @@ img {
   width: 206px;
   height: 44px;
   margin-right: -10px;
-  /*margin-bottom: -30px;*/
+  margin-bottom: -30px;
 }
 
+/* .icon-list {
+      display: flex;
+      justify-content: center;
+      height: 44px;
+      margin-right: -10px;
+      margin-bottom: 30px;
+   }*/
 .icon-list-item {
   display: inline-block;
   display: flex;
@@ -709,6 +716,7 @@ img {
   }*/
 .footer-form {
   width: 450px;
+  margin-top: 60px;
 }
 
 .footer-input {
@@ -834,5 +842,13 @@ img {
 
 .icon-list-item .dark-them-1 {
   fill: var(--background-color);
+}
+
+.list-footer {
+  width: 100%;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=portfolio.css.map */
