@@ -49,8 +49,8 @@
     background-size: cover;
     background-position: center;
     background-color: #c4c4c4;
-  }
-}*/
+  }*/
+
   
  /* .hero-above-side {
     text-align: center;
@@ -68,8 +68,7 @@
     margin-right: 30px;
     
   }*/
-  
-  .hero-list-item-title {
+ .hero-list-item-title {
     margin-top: 30px;
     font-family: var(--text-font);
     @include line-height-calc(14, 16, 700);
@@ -80,7 +79,7 @@
 
   }
   
-  .hero-list-item-text {
+ .hero-list-item-text {
     font-family: var(--text-font);
     @include line-height-calc(14, 24, 400);
     letter-spacing: 0.03em;
@@ -95,26 +94,14 @@
  /*.hero-description {
     padding-bottom: 94px;
     padding-top: 94px;}*/
-  
-    
-   
-  
+@media screen and (min-width:480px) and (max-width:767px){
 
-  .hero-list {
+ .hero-list {
     display: flex;
     flex-direction: column;
   }
-  @media screen and(min-width:768px){
-    .hero-above-side{
-      width: 360px;
-      margin: 0 auto;
-    }
-    .hero-list{
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-  .hero-list-item::before {
+}
+.hero-list-item::before {
     content: "";
     display: block;
     background: #f5f4fa;
@@ -141,91 +128,112 @@
 
   
   
-    .hero{
-    height: 400px;
-    background: rgba(47, 48, 58, 0.4);
-    padding-top: 118px;
-    padding-bottom: 118px;
-    
-    }
-    .hero-title {
-     text-align: center;
-     align-items: center;
-     margin-bottom: 30px;
-     font-family:var(--text-font);
-     font-style: normal;
-     @include line-height-calc(26, 42, 900);
-     letter-spacing: 0.06em;
-     text-transform: uppercase;
-     color:var(--background-color);
-    }
+ .hero{
+   height: 400px;
+   background: rgba(47, 48, 58, 0.4);
+   padding-top: 118px;
+   padding-bottom: 118px;
+  }
+ .hero-title {
+   text-align: center;
+   align-items: center;
+   margin-bottom: 30px;
+   font-family:var(--text-font);
+   font-style: normal;
+   @include line-height-calc(26, 42, 900);
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color:var(--background-color);
+ }
+.overlay{
+   height: 400px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: linear-gradient( to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/hw-08/header/Header-img.jpg) 
+ }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:480px),
+   screen and (min-resolution: 192dpi)and (min-width:480px),
+   screen and (min-resolution: 2dppx)and (min-width:480px) {
     .overlay{
-      height: 400px;
-     background-position: center;
-      background-repeat: no-repeat;
-      background-image: linear-gradient( to right,
+      background-image:linear-gradient( to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-      url(../images/hw-08/header/Header-img.jpg) 
+       url(../images/hw-08/header/Header-img@2x.jpg )
     }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width:480px),
-    screen and (min-resolution: 192dpi)and (min-width:480px),
-     screen and (min-resolution: 2dppx)and (min-width:480px) {
-        .overlay{
-          background-image:linear-gradient( to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)),
-           url(./images/hw-08/header/Header-img@2x.jpg )
-          }
         
-      }
-      @media screen and(min-width:768px){
-       .overlay{
-          background-image:linear-gradient( to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-        url(../images/hw-08/header/Header-tab.jpg) 
-      }
-      @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
-      screen and (min-resolution: 192dpi)and (min-width:768px),
-       screen and (min-resolution: 2dppx)and (min-width:768px) {
-          .overlay{
-            background-image:linear-gradient( to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-             url(./images/hw-08/header/Header-tab@2x.jpg )
-            }
-    }
-    @media screen and(min-width:1200px){
+  }
+@media screen and(min-width:768px){
+   .overlay{
+      background-image:linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+     url(../images/hw-08/header/Header-tab.jpg) 
+   }
+  }
+ @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+    screen and (min-resolution: 192dpi)and (min-width:768px),
+    screen and (min-resolution: 2dppx)and (min-width:768px) {
       .overlay{
          background-image:linear-gradient( to right,
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+         url(../images/hw-08/header/Header-tab@2x.jpg )
+         }
+  }
+
+ @media screen and(min-width:1200px){
+     .overlay{
+        background-image:linear-gradient( to right,
        rgba(47, 48, 58, 0.4),
        rgba(47, 48, 58, 0.4)),
        url(../images/hw-08/header/img.jpg) 
      }
-     @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
-     screen and (min-resolution: 192dpi)and (min-width:1200px),
-      screen and (min-resolution: 2dppx)and (min-width:1200px) {
-         .overlay{
-           background-image:linear-gradient( to right,
-           rgba(47, 48, 58, 0.4),
-           rgba(47, 48, 58, 0.4)),
-            url(./images/hw-08/header/img@2x.jpg )
+   }
+
+ @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+    screen and (min-resolution: 192dpi)and (min-width:1200px),
+    screen and (min-resolution: 2dppx)and (min-width:1200px) {
+      .overlay{
+         background-image:linear-gradient( to right,
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+          url(./images/hw-08/header/img@2x.jpg )
          }
-        }
-    .hero-above-side {
-      align-items: center;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+  }
+ .hero-above-side {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   
-    }
-    .hero-list-item::before{
-      height: 120px;
-      
-    }
-    .hero-description{
+ }
+ .hero-list-item::before{
+     height: 120px;
+   }
+
+   .hero-description{
       padding-top: 60px;
       padding-bottom: 60px;
+      max-width: 100%;
     } 
+    @media screen and(min-width:768px){
+      .hero-above-side{
+        width: 360px;
+        margin: 0 auto;
+      }
+      .hero-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin:-15px;
+      }
+      .hero-list-item{
+        display: inline-block;
+       max-width: 354px;
+        margin: 15px;
+      }
+    }
    

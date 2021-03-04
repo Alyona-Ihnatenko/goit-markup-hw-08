@@ -28,11 +28,18 @@
     .header &{
      display: flex;
      justify-content: space-between;
-     
     }
-
-  }
+    }
+    .footer &{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+    
 }
+
 @media screen and (min-width:1200px){
   .container{
     width: 1200px;

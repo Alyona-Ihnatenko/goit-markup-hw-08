@@ -82,69 +82,96 @@
    padding-bottom: 60px;
 }
 .address-list-item-link {
-       font-family: var(--text-font);
-      @include line-height-calc(14, 24, 400);
-      letter-spacing: 0.03em;
-      color: var(--text-color-accent);
-    }
-    .address-list-item-link-tel,
-     .address-list-item-link-mail {
-      font-family: var(--text-font);
-      @include line-height-calc(14, 24, 400);
-       letter-spacing: 0.03em;
-      color: rgba(255, 255, 255, 0.6);
-      transition: color var(--duration) var(--cubic);
-     }
-      .address-list-item-link-tel:hover,
-      .address-list-item-link-mail:hover,
-      .address-list-item-link-tel:focus,
-      .address-list-item-link-mail:focus{
-      color: var(--link-color);
-      }
-      .footer-address{
-       text-align: center;
-      }
-     .address-list{
-       margin-top: 20px;
-     }
-     .footer-icons{
-       margin-top: 60px;
-        align-items: center;
-        display:block;
-      
-      }
-      .footer-title{
-        color: var(--background-color);
-        margin-bottom: 20px;
-        font-family:var(--text-font);
-        font-style: normal;
-        @include line-height-calc(14, 16, 700);
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        text-align: center;
-       }
-       .icon-link .dark-them{
-          color: var(--background-color);
-         }
-       .icon-list-item .dark-them{
-           background-color: rgba(255, 255, 255, 0.1);
-             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        
-             &:hover,
-             &:focus{
-             background-color: var(--link-color);
-              color: var(--background-color);
-            }
-          }
-          .icon-list-item .dark-them-1{
-            fill:var(--background-color);
-           }
-  .list-footer{
+  font-family: var(--text-font);
+  @include line-height-calc(14, 24, 400);
+  letter-spacing: 0.03em;
+  color: var(--text-color-accent);
+ }
+
+.address-list-item-link-tel,
+.address-list-item-link-mail {
+ font-family: var(--text-font);
+ @include line-height-calc(14, 24, 400);
+ letter-spacing: 0.03em;
+ color: rgba(255, 255, 255, 0.6);
+transition: color var(--duration) var(--cubic);
+}
+
+ .address-list-item-link-tel:hover,
+ .address-list-item-link-mail:hover,
+ .address-list-item-link-tel:focus,
+ .address-list-item-link-mail:focus{
+  color: var(--link-color);
+ }
+  
+ .footer-address{
+   text-align: center;
+   align-items: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   margin-bottom: 60px;
+  }
+.address-list{
+ margin-top: 20px;
+}
+
+.footer-icons{
+   margin-top: 60px;
+   align-items: center;
+   display:block;
+ }
+
+.footer-title{
+  color: var(--background-color);
+  margin-bottom: 20px;
+ font-family:var(--text-font);
+ font-style: normal;
+  @include line-height-calc(14, 16, 700);
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+  text-align: center;
+}
+.icon-link .dark-them{
+ color: var(--background-color);
+}
+     
+.icon-list-item .dark-them{
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+       &:hover,
+       &:focus{
+         background-color: var(--link-color);
+         color: var(--background-color);
+        }
+}
+.icon-list-item .dark-them-1{
+    fill:var(--background-color);
+  }
+
+.list-footer{
     width: 100%;
     height: 44px;
     justify-content: center;
     align-items: center;
-    
- }
+}
 
+@media screen and(min-width:768px){
+ .footer-address{
+ align-items: center;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ flex-shrink: 0;
+ margin-bottom: 60px;
+  }
+  .logo-link-dark-theme{
+    display: block;
+   
+  }
+  .footer-input{
+    width: 450px;
+  }
+}
           
