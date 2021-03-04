@@ -112,3 +112,21 @@ fill: var(--link-color);
 fill: var(--accent-color);
 margin-right: 8px;
 }
+@media screen and(min-width:1200px){
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .auth-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .contacts-icon-mail{
+    width: 12px;
+    height: 16px;
+  }
+  .contacts-icon-mail{
+    width: 10px;
+    height: 16px;
+  }
+
+}

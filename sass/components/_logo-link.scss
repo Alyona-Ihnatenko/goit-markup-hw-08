@@ -6,8 +6,8 @@
   font-size: $fs * 1px;
   line-height: $lh-my;
   font-weight: $fw;
-}
-
+}*/
+@media screen and(min-width:1200px){
 .logo-link {
     display: flex;
     padding-top: 24px;
@@ -29,5 +29,6 @@
   
   .logo-link-light-theme {
     color: #000000;
-  }*/
+  }
+}
   

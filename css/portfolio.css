@@ -136,15 +136,17 @@ img {
   font-size: $fs * 1px;
   line-height: $lh-my;
   font-weight: $fw;
-}
-
-.logo-link {
+}*/
+@media screen and (min-width: 1200px) {
+  .logo-link {
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
     font-family: var(--logo-font);
-    @include line-height-calc(26, 31, 700);
+    font-size: 26px;
+    line-height: 1.193;
+    font-weight: 700;
     letter-spacing: 0.03em;
     font-style: normal;
   }
@@ -156,10 +158,11 @@ img {
   .logo-link-dark-theme {
     color: var(--text-color-accent);
   }
-  
   .logo-link-light-theme {
     color: #000000;
-  }*/
+  }
+}
+
 .icon-link {
   display: flex;
   align-items: center;
@@ -276,6 +279,24 @@ img {
 .contacts-icon-mail {
   fill: var(--accent-color);
   margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .auth-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .contacts-icon-mail {
+    width: 12px;
+    height: 16px;
+  }
+  .contacts-icon-mail {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .icon-link {
