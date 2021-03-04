@@ -122,7 +122,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -381,6 +381,7 @@ img {
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
 .burger-btn,
@@ -630,6 +631,15 @@ img {
   transform: translateY(0%);
 }
 
+@media screen and (min-width: 768px) {
+  .projects-list {
+    margin: -15px;
+  }
+  .projects-list-item {
+    width: 354px;
+  }
+}
+
 .icon-link {
   display: flex;
   align-items: center;
@@ -672,6 +682,12 @@ img {
   flex-wrap: wrap;
   justify-content: start;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    justify-content: center;
+  }
 }
 
 .icon-link {
@@ -726,6 +742,7 @@ img {
 .footer-input {
   width: 100%;
   height: 50px;
+  padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -764,6 +781,17 @@ img {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    width: 450px;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .icon-link {
@@ -806,6 +834,12 @@ img {
 
 .footer-address {
   text-align: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: 60px;
 }
 
 .address-list {
@@ -854,5 +888,28 @@ img {
   height: 44px;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 60px;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .logo-link-dark-theme {
+    margin-bottom: 20px;
+    padding: 0;
+    margin-right: 0;
+    align-items: center;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -166,10 +166,17 @@ transition: color var(--duration) var(--cubic);
  flex-shrink: 0;
  margin-bottom: 60px;
   }
-  .logo-link-dark-theme{
-    display: block;
-   
+  .address-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
- 
+  .logo-link-dark-theme{
+    margin-bottom: 20px;
+    padding: 0;
+    margin-right: 0;
+    align-items: center;
+  }
 }
           
