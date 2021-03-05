@@ -135,3 +135,39 @@
     margin: 15px;
   }
 }
+@media screen and(min-width:1200px){
+  .our-clients {
+      padding-top: 94px;
+      padding-bottom: 94px;
+  
+      & .our-clients .container {
+         display: flex;
+       }
+     }
+ .our-clients-descr {
+      text-align: center;
+     }
+    
+ .our-client-list {
+   display: flex;
+   margin-right: -15px;
+     }
+   .our-clients-item {
+    display: inline-block;
+    display: flex;
+    text-decoration: none;
+    margin-right: 15px;
+    width: 170px;
+    height: 90px;
+     }
+   .our-clients-title {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      min-width: 390px;
+      margin-left: auto;
+   }
+      .our-clients .container{
+        width: 100%;
+      }
+}

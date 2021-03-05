@@ -113,20 +113,39 @@ fill: var(--accent-color);
 margin-right: 8px;
 }
 @media screen and(min-width:1200px){
+  .header .container{
+    display: flex;
+    align-items: baseline;
+  }
   .navigation-list-item:not(:last-child) {
     margin-right: 50px;
   }
   .auth-nav {
     display: flex;
     margin-left: auto;
+    align-items: center;
   }
   .contacts-icon-mail{
-    width: 12px;
-    height: 16px;
+    width: 16px;
+    height: 12px;
   }
-  .contacts-icon-mail{
+  .contacts-icon-tel{
     width: 10px;
     height: 16px;
   }
+.auth-nav-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
 
+}
+.auth-nav-item{
+  display: flex;
+text-align: center;
+margin-right: 30px;
+align-items: center;
+
+
+}
 }
