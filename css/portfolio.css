@@ -1151,6 +1151,32 @@ img {
   align-items: center;
 }
 
+@media screen and (max-width: 479px) {
+  .footer-address {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 60px;
+  }
+  .footer-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    width: 206px;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .footer-address {
     align-items: center;
