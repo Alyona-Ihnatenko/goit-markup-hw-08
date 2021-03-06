@@ -233,3 +233,11 @@ transition: color var(--duration) var(--cubic);
   }
 }
 
+@media screen and (min-width:1200){
+  .footer-address{
+    align-items: flex-start;
+margin-right: 70px;
+margin-bottom: 0;
+width: 231px;
+  }
+}
