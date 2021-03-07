@@ -23,11 +23,11 @@
   width: 294px;
 }
 .navigation-list-item:not(:last-child){
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 .auth-nav-list{
-  margin-left: 84px;
+  padding-left: 84px;
 }
 @media screen and (min-width:768px){
   .logo-link{
@@ -123,7 +123,7 @@ margin-right: 8px;
     align-items: baseline;
   }
   .navigation-list-item:not(:last-child) {
-    margin-right: 50px;
+   padding-right: 50px;
   }
   .auth-nav {
     display: flex;
@@ -146,9 +146,9 @@ margin-right: 8px;
 
 }
 .auth-nav-item{
-  display: flex;
+  display:block;
 text-align: center;
-margin-right: 30px;
+padding-right: 30px;
 align-items: center;
 }
 .tel-link,
