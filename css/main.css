@@ -1428,6 +1428,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 100%;
+  }
   .hero-list {
     display: flex;
     justify-content: space-between;
