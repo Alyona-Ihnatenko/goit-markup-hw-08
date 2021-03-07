@@ -250,4 +250,12 @@
     display: inline-block;
     margin: 15px;
   }
+  .hero-title{
+    @include line-height-calc(44, 60, 900);
+   
+  }
+  .hero-above-side{
+    width: 696px;
+    margin: 0 auto;
+   }
 }

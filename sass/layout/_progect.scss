@@ -109,8 +109,9 @@
       }
  }
   .projects-title {
+    
        font-family: var(--text-font);
-      @include line-height-calc(18, 36, 700);
+      @include line-height-calc(17, 36, 700);
        letter-spacing: 0.06em;
       color: var(--title-color);
      }

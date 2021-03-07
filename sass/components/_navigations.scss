@@ -25,6 +25,7 @@
 .navigation-list-item:not(:last-child){
   margin-right: 50px;
 }
+
 .auth-nav-list{
   margin-left: 84px;
 }
@@ -79,14 +80,18 @@
 .current {
   color: var(--link-color);
 }
-
+.tel-link{
+  padding-top: 20px;
+}
+.mail-link{
+  padding-bottom: 20px;
+}
  .tel-link,
   .mail-link{
 font-family: var(--text-font);
 @include line-height-calc(12, 14, 500);
 letter-spacing: 0.02em;
-padding-top: 21px;
-padding-bottom:21 px;
+
 color: var(--accent-color);
 transition: color, var(--duration), var(--cubic);
 }
@@ -145,7 +150,10 @@ margin-right: 8px;
 text-align: center;
 margin-right: 30px;
 align-items: center;
-
-
+}
+.tel-link,
+.mail-link{
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 }

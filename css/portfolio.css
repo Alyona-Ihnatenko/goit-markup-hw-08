@@ -247,6 +247,14 @@ img {
   color: var(--link-color);
 }
 
+.tel-link {
+  padding-top: 20px;
+}
+
+.mail-link {
+  padding-bottom: 20px;
+}
+
 .tel-link,
 .mail-link {
   font-family: var(--text-font);
@@ -254,8 +262,6 @@ img {
   line-height: 1.167;
   font-weight: 500;
   letter-spacing: 0.02em;
-  padding-top: 21px;
-  padding-bottom: 21 px;
   color: var(--accent-color);
   transition: color, var(--duration), var(--cubic);
 }
@@ -318,6 +324,11 @@ img {
     text-align: center;
     margin-right: 30px;
     align-items: center;
+  }
+  .tel-link,
+  .mail-link {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -422,8 +433,7 @@ img {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 15px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -611,8 +621,8 @@ img {
 
 .projects-title {
   font-family: var(--text-font);
-  font-size: 18px;
-  line-height: 2;
+  font-size: 17px;
+  line-height: 2.118;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--title-color);
@@ -705,7 +715,6 @@ img {
 
 .buttons-list-item :not(last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
   border-radius: 4px;
   background: var(--our-tem-color);
 }
