@@ -217,7 +217,6 @@ img {
 .modal-form {
   width: 100%;
   max-width: 370px;
-  position: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -409,6 +408,12 @@ img {
   border-color: var(--link-color);
 }
 
+@media screen and (max-width: 479px) {
+  .policy-text {
+    width: calc(100% - 26px);
+  }
+}
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -431,6 +436,11 @@ img {
   opacity: 0;
 }
 
+.modal-form-input-label {
+  margin-bottom: 4px;
+  width: 100%;
+}
+
 .modal-form-btn {
   width: 200px;
   height: 50px;
@@ -442,7 +452,6 @@ img {
   font-size: 16px;
   line-height: 1.875;
   font-weight: 700;
-  display: flex;
   text-align: center;
   align-items: center;
   letter-spacing: 0.06em;
@@ -799,6 +808,14 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--link-color);
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-link-tel {
+    font-size: 25px;
+    line-height: 1.6;
+    font-weight: 500;
+  }
 }
 
 .mobile-item-tel {

@@ -140,6 +140,11 @@
       color:var(--link-color);
       
     }
+  @media screen and(max-width:479px){
+    .mobile-link-tel{
+      @include line-height-calc(25, 40, 500); 
+    }
+  }
     .mobile-item-tel{
       margin-bottom: 32px;
     }

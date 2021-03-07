@@ -22,7 +22,6 @@
    font-family: var(--text-font);
    font-style: normal;
    @include line-height-calc(16, 30, 700);
-   display: flex;
    text-align: center;
    align-items: center;
    letter-spacing: 0.06em;
