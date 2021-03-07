@@ -951,6 +951,7 @@ img {
   padding-bottom: 60px;
   display: flex;
   align-items: baseline;
+  max-width: 1600px;
 }
 
 .address-list-item:not(:last-child) {
