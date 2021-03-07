@@ -214,7 +214,7 @@ img {
     color: var(--title-color);
     position: relative;
     padding-top: 32px;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
     transition-property: color;
     transition-duration: var(--duration);
     transition-timing-function: var(--cubic);
@@ -322,6 +322,8 @@ img {
   }
   .auth-nav-item {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 28px;
     text-align: center;
     padding-right: 30px;
     align-items: center;

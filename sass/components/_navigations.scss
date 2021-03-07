@@ -46,7 +46,7 @@
     color: var(--title-color);
     position: relative;
     padding-top: 32px;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
     transition-property: color;
     transition-duration:var(--duration);
     transition-timing-function:var(--cubic);
@@ -139,7 +139,8 @@ margin-right: 8px;
     height: 16px;
   }
 .auth-nav-list{
-  display: flex;
+  display:flex;
+  
   flex-direction: row;
   align-items: center;
   text-align: center;
@@ -147,6 +148,8 @@ margin-right: 8px;
 }
 .auth-nav-item{
   display:block;
+  padding-top: 32px;
+  padding-bottom: 28px;
 text-align: center;
 padding-right: 30px;
 align-items: center;
